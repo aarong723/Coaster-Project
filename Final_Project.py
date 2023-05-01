@@ -309,10 +309,7 @@ def dictCreation():
     key_list = []
     coasterDict = {}
     pd.options.display.max_rows = 999
-    #May need to change path depending on computer
-    df = pd.read_excel("/Users/aaron/downloads/RollerCoasters-Geo.xlsx")
-    #GITHUB PATH
-    #df = pd.read_excel("RollerCoasters-Geo.xlsx")
+    df = pd.read_excel("RollerCoasters-Geo.xlsx")
     name_list = list(df['Coaster'])
     state_list = list(df['State'])
     city_list = list(df['City'])
