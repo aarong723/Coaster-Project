@@ -1,6 +1,6 @@
 """
 Programmed by Aaron Gold
-CS230 Section 3
+May 5th 2023
 Data: Roller Coaster Database
 This project allows for the user to view data about roller coasters in the United States via graphs and pivot tables,
 and receive recommendations for coasters to try, as well as see reviews from 'celebrities' about coasters.
