@@ -197,7 +197,7 @@ def coasterRec(state_list, design_list, dictionary):
     if recommendation_button:
         st.write("Your capacity for adventure is", str(round(total_calc, 2)), "out of 10. Based on this, we have some"
                  " recommendations for you! :tada:")
-        if design_points < 1:
+        if inversion_points < 1:
             giveRecs(state_choice_list, float(speed), float(height), dictionary, round(total_calc, 2))
         else:
             giveRecs(state_choice_list, float(speed), float(height), dictionary, round(total_calc, 2),
@@ -257,7 +257,6 @@ def giveRecs(chosen_states, chosen_speed, chosen_height, coaster_dict, adventure
         if current_rec[5] == "N":
             inversion_status = " does not have inversion(s),"
         else:
-            #adventure_list = score dif, score, city, state, name, inversions(y/n), height, speed, park
             inversion_status = " has inversion(s),"
         for rec in range(len(rec_list)):
             st.write(f":green[{str(int(rec + 1))}:]", f":blue[{rec_list[rec][4]}]", "at", f":orange[{rec_list[rec][8]}]"
