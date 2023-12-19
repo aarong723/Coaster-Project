@@ -126,7 +126,7 @@ def speedPerSecond(df):
 
 #Map of all the roller coaster parks in the database
 def coasterMap(df):
-    st.title(":blue[_Roller Coaster Park Map]")
+    st.title(":blue[_Roller Coaster Park Map_]")
     df = df.drop(columns=['Age_Group', 'Coaster', 'State', 'Type', 'Design', 'Year_Opened', 'Top_Speed',
                         'Max_Height', 'Drop', 'Length', 'Duration', 'Inversions', 'Num_of_Inversions'])
     view_state = pdk.ViewState(latitude=df['Latitude'].mean(), longitude=df['Longitude'].mean(), zoom=4, pitch=0)
